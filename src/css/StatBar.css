@@ -1,0 +1,38 @@
+.StatBar {
+  display: flex;
+  /*background: pink;*/
+}
+
+.StatBar span:nth-child(odd) {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.StatBar span:nth-child(even) {
+  flex-basis: 0;
+  flex-grow: 2;
+  color: #fff;
+}
+
+.bar {
+  position: relative;
+  background: #ededed;
+}
+
+.bar-fill, .bar-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bar-fill {
+  z-index: 100000;
+  transform-origin: left;
+}
+
+.bar-info {
+  z-index: 200000;
+  margin-left: .5rem;
+}
