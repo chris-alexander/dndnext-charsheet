@@ -1,0 +1,11 @@
+.Header {
+  text-align: center;
+}
+
+.Header table {
+  width: 100%;
+}
+
+.Header tr {
+  vertical-align: middle;
+}

@@ -1,12 +1,14 @@
 import React from 'react';
 import Appbar from 'muicss/lib/react/appbar';
 
+import '../css/Header.css';
+
 const Header = (props) => {
   const { name } = props;
   return (
-    <header>
+    <header className="Header">
       <Appbar>
-        <table width="100%">
+        <table>
           <tbody>
             <tr>
               <td className="mui--appbar-height">
