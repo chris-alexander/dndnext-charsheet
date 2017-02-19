@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import '../css/StatBar.css';
 
@@ -20,6 +20,12 @@ const StatBar = (props) => {
       </span>
     </div>
   );
+};
+
+StatBar.proptypes = {
+  statName: PropTypes.string.isRequired,
+  max: PropTypes.number.isRequired,
+  current: PropTypes.number.isRequired
 };
 
 export default StatBar;

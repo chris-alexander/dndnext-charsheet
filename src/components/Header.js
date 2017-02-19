@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Appbar from 'muicss/lib/react/appbar';
 
 import '../css/Header.css';
@@ -20,6 +20,10 @@ const Header = (props) => {
       </Appbar>
     </header>
   );
+};
+
+Header.propTypes = {
+  name: PropTypes.string.isRequired
 };
 
 export default Header;
